@@ -1,0 +1,81 @@
+* {box-sizing: border-box;
+margin: 0px;}
+
+html {
+    font-size: 12px;}
+
+.body {
+    margin: 0px;}
+
+.catalog {border: 1px solid grey;
+    width: clamp(576px, 950px, 1200px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-wrap: wrap;
+}
+
+
+.cell {
+padding: 10px;
+}
+
+.component {width: 500px;
+text-align: justify;}
+
+.price {width: 220px;}
+
+h2 {margin: 0px 0px 15px 0px;
+   font-size: 14px;}
+
+p {font-size: 14px;
+margin: 0px 0px 15px 0px}   
+
+p+span {font-size: 14px;
+    margin: 0px 40px 0px 0px;}
+
+p+span+span {font-size: 14px;
+    transition: 0.5s;
+    opacity: 0;}
+
+.first {color: orange;
+    font-size: 17px;
+    margin: 0px 0px 6px 0px;
+    font-weight: bolder;}
+
+.first+div {font-size: 14px;
+    margin: 0px 0px 6px 0px;}
+
+.first+div+div {font-size: 14px;
+   }
+
+div+button {background: orange;
+color: white;
+padding: 5px;
+width: 100%;
+margin: 6px 0px 0px 0px;}
+
+button+button {background: green;
+    color: white;
+    padding: 5px;
+    width: 100%;
+margin: 6px 0px 0px 0px;
+transition: 0.5s;
+opacity: 0;}
+
+.catalog:hover button+button {opacity: 1;
+transition: 0.5s;
+}
+
+.catalog:hover p+span+span {opacity: 1;
+    transition: 0.5s;
+    }
+
+image {transition: 0.5s;}
+
+
+.catalog:hover .image {transform: scale(1.15);}
+
+
+
